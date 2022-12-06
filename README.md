@@ -1,13 +1,9 @@
 ### Problem Definition
+Adversarial attacks are the phenomenon in which machine learning models can be tricked to make false predictions by slightly modifying the input. There is not a lot of research that happened on comparing the effect of one attack on multiple models as well as the multiple datasets. So, we have studied the effect of an adversarial attack(Text fooler) on multiple bert-based NLP models on both IMDB and Yelp datasets and proposed an ensemble defense solution.
 
-A popular music application like Spotify has data about millions of users and millions of songs which only keeps growing with time. With a dataset of this size, it is impractical to use a centralized server system to store and process this data. This emanates the need for a distributed architecture wherein we can add new nodes to the system as per requirement without needing to migrate from the old system. We have designed a distributed Music Recommendation System using Spark framework.
+### Motivation
+There is sample literature exploring adversarial attacks on image deep neural networks (DNN) systems for object detection systems. Comparisons and trade-offs between different proposed attack types have been made and documented regularly over the past years. However, when it comes to adversarial attack effects on BERT NLP models, comparison surveys are scarce and sparse. Our primary motivation to perform this analysis is the fact that it is an area which hasn't been thoroughly explored yet. The insights that will be gained from our study will help both the designers of adversarial attacks to strengthen their methods in the future and to identify specific weaknesses in a BERT based text classification model. We also hope to make informative deductions based on the different datasets that will be used during experimentation.
 
-### Introduction and Motivation
-* Horizontal and Vertical Scalability - Centralized client server architecture provides vertical scalability, that is, it supports increasing the compute of existing nodes in the system. There is a threshold to how much this compute can be increased. Also, there is a greater risk of system going down and it is expensive to implement. Whereas, in distributed architecture, along with adding compute to the existing nodes, we can also add new nodes to the system.
-
-* Robustness - It is able to function even if one or more of its software or hardware components fail
-
-* No single point of failure - In the absence of a centralized server entity, distributed systems are fault tolerant.
 
 ### Spark Overview
 ![](Spark_Distributed_Architecture.png)
